@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping mall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body >
+<div class="shop-mall-detail pb-105">
+    <div class="yr-shop-mall">
+        <h3>长泰广场</h3>
+        <div class="mall-con">
+            <div class="mall-his " >
+                <div class="chart-legend chart-legend1">
+                    <ul>
+                        <li>
+                            <i class="bg-color1"></i>休闲娱乐
+                        </li>
+                        <li>
+                            <i class="bg-color2"></i>餐饮
+                        </li>
+                        <li>
+                            <i class="bg-color3"></i>服装
+                        </li>
+                        <li>
+                            <i class="bg-color4"></i>超市
+                        </li>
+                    </ul>
+                </div>
+                <div id="mychart" class="mychart"></div>
+                <div class="chart-title">
+                    业态分布图
+                </div>
+            </div>
+            <div class="mall-data " >
+                <p>购物中心：20万平米</p>
+                <p>动态客流：110万人</p>
+                <p>静态客流：80万人</p>
+                <p>写&nbsp;&nbsp;字 楼：1万平米</p>
+                <p>百&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;货：110万人</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-search " >
+        <nav class="screen clearfix">
+            <div  class="">
+                <a >面积</a>
+                <span class="sanjiao "></span>
+            </div>
+            <div >
+                <a>费用</a>
+                <span class="sanjiao "></span>
+            </div>
+            <div style="border: none" id="sanjiao">
+                <a >筛选</a>
+                <span class="sanjiao "></span>
+            </div>
+        </nav>
+        <div class="screen-lis clearfix" id="screen-lis">
+            <ul class="screen-area bg-white">
+                <li><a href="">不限选择</a></li>
+                <li><a href="">20平米以下</a></li>
+                <li class="screen-area-ok"><a href="" class="t-screen">20-50平米</a></li>
+                <li><a href="">50-100平米</a></li>
+                <li style="border-bottom: none"><a href="">100平米以上</a></li>
+            </ul>
+            <ul class="screen-area-black">
+                <li><a href=""> </a></li>
+                <li><a href=""> </a></li>
+                <li><a href=""> </a></li>
+                <li><a href=""> </a></li>
+                <li style="border-bottom: none"><a href=""> </a></li>
+            </ul>
+        </div>
+        <div class="screen-con  bg-white" id="screen-con" style="display: block;overflow: scroll;">
+            <div class="p-con" style="padding-bottom: 1rem;">
+                <h3>推荐商铺</h3>
+                <p class="clearfix"><span>不限</span> <span>低价急转铺</span> <span style="margin-right: 0">最热餐饮铺</span></p>
+                <p class="clearfix"><span>不限</span> <span>低价急转铺</span> <span style="margin-right: 0">最热餐饮铺</span></p>
+                <h3 style="padding-top: 0.21rem">商铺类型</h3>
+                <p class="clearfix"><span>不限</span> <span>低价急转铺</span><span style="margin-right: 0">最热餐饮铺</span></p>
+                <p class="clearfix"><span>不限</span> <span>低价急转铺</span> <span style="margin-right: 0">最热餐饮铺</span></p>
+                <p class="clearfix"><span>不限</span> <span>低价急转铺</span><span style="margin-right: 0">最热餐饮铺</span></p>
+                <h3 style="padding-top: 0.21rem">租赁类型</h3>
+                <p class="clearfix"><span>不限</span> <span>低价急转铺</span> <span style="margin-right: 0">最热餐饮铺</span></p>
+            </div>
+            <a href="" style="position: absolute;bottom: 0;">确定</a>
+        </div>
+    </div>
+
+    <div class="shop-recommend p-lr-30 ">
+        <ul class="shop-list">
+            <li class="clearfix">
+                <div class="shop-logo fl">
+                    <img src="images/shop1.jpg" alt="">
+                </div>
+                <div class="shop-info fr">
+                    <a href="商铺详情.html" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                    <div class="shop-flag">
+                        <span class="button flag1">有证照</span>
+                        <span class="button flag2">写字楼多</span>
+                        <span class="flag3">30平米</span>
+                        <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                    </div>
+                    <div class="shop-price clearfix">
+                        <span class="fl">3分钟前更新</span>
+                        <span class="fr">4.5万元/月</span>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="shop-logo fl">
+                    <img src="images/shop1.jpg" alt="">
+                </div>
+                <div class="shop-info fr">
+                    <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                    <div class="shop-flag">
+                        <span class="button flag1">有证照</span>
+                        <span class="button flag2">写字楼多</span>
+                        <span class="flag3">30平米</span>
+                        <a href="" class="collect  fr"><i></i>收藏</a>
+                    </div>
+                    <div class="shop-price clearfix">
+                        <span class="fl">3分钟前更新</span>
+                        <span class="fr">4.5万元/月</span>
+                    </div>
+                </div>
+
+            </li>
+            <li class="clearfix">
+                <div class="shop-logo fl">
+                    <img src="images/shop1.jpg" alt="">
+                </div>
+                <div class="shop-info fr">
+                    <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                    <div class="shop-flag">
+                        <span class="button flag1">有证照</span>
+                        <span class="button flag2">写字楼多</span>
+                        <span class="flag3">30平米</span>
+                        <a href="" class="collect  fr"><i></i>收藏</a>
+                    </div>
+                    <div class="shop-price clearfix">
+                        <span class="fl">3分钟前更新</span>
+                        <span class="fr">4.5万元/月</span>
+                    </div>
+                </div>
+
+            </li>
+            <li class="clearfix">
+                <div class="shop-logo fl">
+                    <img src="images/shop1.jpg" alt="">
+                </div>
+                <div class="shop-info fr">
+                    <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                    <div class="shop-flag">
+                        <span class="button flag1">有证照</span>
+                        <span class="button flag2">写字楼多</span>
+                        <span class="flag3">30平米</span>
+                        <a href="" class="collect  fr"><i></i>收藏</a>
+                    </div>
+                    <div class="shop-price clearfix">
+                        <span class="fl">3分钟前更新</span>
+                        <span class="fr">4.5万元/月</span>
+                    </div>
+                </div>
+
+            </li>
+            <li class="clearfix">
+                <div class="shop-logo fl">
+                    <img src="images/shop1.jpg" alt="">
+                </div>
+                <div class="shop-info fr">
+                    <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                    <div class="shop-flag">
+                        <span class="button flag1">有证照</span>
+                        <span class="button flag2">写字楼多</span>
+                        <span class="flag3">30平米</span>
+                        <a href="" class="collect  fr"><i></i>收藏</a>
+                    </div>
+                    <div class="shop-price clearfix">
+                        <span class="fl">3分钟前更新</span>
+                        <span class="fr">4.5万元/月</span>
+                    </div>
+                </div>
+
+            </li>
+            <li class="clearfix">
+                <div class="shop-logo fl">
+                    <img src="images/shop1.jpg" alt="">
+                </div>
+                <div class="shop-info fr">
+                    <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                    <div class="shop-flag">
+                        <span class="button flag1">有证照</span>
+                        <span class="button flag2">写字楼多</span>
+                        <span class="flag3">30平米</span>
+                        <a href="" class="collect  fr"><i></i>收藏</a>
+                    </div>
+                    <div class="shop-price clearfix">
+                        <span class="fl">3分钟前更新</span>
+                        <span class="fr">4.5万元/月</span>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="footer">
+    <ul class="clearfix">
+        <li class="footer-index footer-act">
+            <a href="index.html">
+                <b></b>
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="footer-shop ">
+            <a href="店铺列表页面.html">
+                <b></b>
+                <span>商铺</span>
+            </a>
+        </li>
+        <li class="footer-release ">
+            <a href="发布需求.html">
+                <b></b>
+                <span>发布</span>
+            </a>
+        </li>
+        <li class="footer-my ">
+            <a href="个人中心.html">
+                <b></b>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script>
+    window.onload=function(){
+        var h1=$(".yr-shop-mall").height();
+        var h2=$(".screen").height();
+        var h3= $(window).height();
+        var h4=parseInt(h3-h1-h2-3);
+        $(".screen-con").css("height",h4)
+    };
+    var myChart = echarts.init(document.getElementById('mychart'));
+    // 指定图表的配置项和数据
+    var option = {
+        title:{
+            text:''
+        },
+        tooltip: {
+            /*trigger: 'axis',
+            //在这里设置
+            formatter: '{c0}%'*/
+            show:false
+        },
+        legend: {
+            show:false
+        },
+        grid: {
+            left: '-10px',
+            right: '0',
+            bottom: '-19px',
+            x2:'0',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data : ["","","",""],
+                axisTick:{
+                    show:false
+                },
+                axisLabel:{
+                    interval:0
+                },
+                barGap:'5%'
+            }
+        ],
+        yAxis:{
+          show : false
+
+        },
+        series: [
+            {
+                name: '',
+                type: 'bar',
+                barWidth: '60%',
+                data: [
+                    {
+                        value: 20,
+                        itemStyle: {
+                            normal:{
+                                label:{
+                                    show:true,position:'top', formatter: '{c0}%',textStyle:{color:'#000',fontSize:8}
+                                },
+                                color:'#f8b551'
+                            }
+                        }
+                    },
+                    {
+                        value: 20,
+                        itemStyle: {normal:{label:{show:true,position:'top',formatter: '{c0}%',textStyle:{color:'#000',fontSize:8}},color:'#ae5da1'}}
+                    },
+                    {
+                        value: 20,
+                        itemStyle: {normal:{label:{show:true,position:'top',formatter: '{c0}%',textStyle:{color:'#000',fontSize:8}},color:'#e85559'}}
+                    },
+                    {
+                        value: 20,
+                        itemStyle: {normal:{label:{show:true,position:'top',formatter: '{c0}%',textStyle:{color:'#000',fontSize:8}},color:'#89c997'}}
+                    }
+                ]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    $(function() {
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            var mt= parseInt($(".yr-shop-mall").css('height'));
+            alert(mt);
+            if(top>mt){
+                $(".popup-search").addClass("head-top");
+                $(".shop-recommend").addClass('pt-72');
+            }else {
+                $(".popup-search").removeClass("head-top");
+                $(".shop-recommend").removeClass('pt-72');
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>

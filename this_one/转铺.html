@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转铺</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/swiper.min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<div class="pb-105">
+    <div class="fb-hd fb-hd3">
+       <p>本月内<span class="text-orange">320</span>位客户在Hi铺转让成功</p>
+    </div>
+    <div class="form-list " style="padding: 0.5rem;">
+        <ul>
+            <li class="clearfix">
+                <span class="f-title">您的电话</span>
+                <span class="f-con"><input type="text"></span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title">店铺地址</span>
+                <span class="f-con"><input type="text"></span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title">区域</span>
+                <span class="f-con">
+                    <select name="">
+                        <option value="">浦东区</option>
+                    </select>
+                </span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title">面积</span>
+                <span class="f-con">
+                    <select name="">
+                        <option value="">20平米以下</option>
+                    </select>
+                </span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title">租金范围</span>
+                <span class="f-con">
+                    <select name="">
+                        <option value="">不限</option>
+                    </select>
+                </span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title">商铺类型</span>
+                <span class="f-con">
+                    <select name="">
+                        <option value="">百货/购物中心</option>
+                    </select>
+                </span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title">经营业态</span>
+                <span class="f-con">
+                    <select name="">
+                        <option value="">请选择经营业态</option>
+                    </select>
+                </span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title" style="text-align: right;line-height: 0.5rem">上传照片<br><em style="font-size: 0.31rem;color: #999;word-break:break-all;text-align: left">
+                    (请至少上传三张图片，图片只能以 bmp、jpeg、jpg、gif 格式上传,图片大小2M以内)</em></span>
+                <span class="f-con" style="width: 5.8rem">
+                    <img src="images/sc-img.png" alt="" class="yr-form-list">
+                     <img src="images/sc-img.png" alt="" class="yr-form-list">
+                     <img src="images/sc-img.png" alt="" class="yr-form-list">
+                     <img src="images/sc-img.png" alt="" class="yr-form-list">
+                     <img src="images/sc-img.png" alt="" class="yr-form-list">
+                     <img src="images/sc-img.png" alt="" class="yr-form-list">
+                </span>
+            </li>
+            <li class="clearfix">
+                <span class="f-title" onclick="xuan()" id="xuan">
+                  <img src="images/no-dianji.png" alt="" id="dianji">成为金牌用户
+                </span>
+                <span class="f-con">
+                    成为金牌店铺，Hi铺会尽快与
+                    您取得联系， 并保证在5天内
+                    为您成功将店铺转出，一对一
+                    专人服务，拥有更多展示机会
+                    极速转铺！
+                </span>
+            </li>
+        </ul>
+        <a href="" class="btn-orange btn-orange-big">立即提交</a>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <ul class="clearfix">
+        <li class="footer-index ">
+            <a href="index.html">
+                <b></b>
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="footer-shop ">
+            <a href="店铺列表页面.html">
+                <b></b>
+                <span>商铺</span>
+            </a>
+        </li>
+        <li class="footer-release footer-act">
+            <a href="发布需求.html">
+                <b></b>
+                <span>发布</span>
+            </a>
+        </li>
+        <li class="footer-my ">
+            <a href="个人中心.html">
+                <b></b>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script>
+
+    var a=true;
+    var b=document.getElementById("xuan");//点击的按钮
+    var c=document.getElementById("dianji");//图片标签
+    b.onclick=function(){
+        if(a){c.setAttribute('src','images/dianji.png');
+            a=false;}
+        else{c.setAttribute('src','images/no-dianji.png');
+            a=true;}
+
+    }
+
+
+
+</script>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

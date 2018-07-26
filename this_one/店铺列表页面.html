@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商铺列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body id="popup-lis">
+<div class="popup-search">
+    <header class="search">
+        <input type="text" placeholder="区域/商圈">
+        <img src="images/search-f.png" alt="" class="search-f">
+        <div class="search-area fr">
+            <a href="区域商铺列表.html">
+                <img src="images/search-icon.png" alt="" class="search-icon">
+                <p>上海</p>
+            </a>
+        </div>
+    </header>
+    <nav class="screen clearfix">
+        <div>
+            <a href="">区域</a>
+            <span class="sanjiao"></span>
+        </div>
+        <div onclick="show()">
+            <a onclick="show()">面积</a>
+            <span class="sanjiao sanjiao-ok"></span>
+        </div>
+        <div onclick="show2()">
+            <a onclick="show2()">费用</a>
+            <span class="sanjiao"></span>
+        </div>
+        <div style="border: none" onclick="show1()" id="sanjiao">
+            <a onclick="show1()">筛选</a>
+            <span class="sanjiao"></span>
+        </div>
+    </nav>
+</div>
+<div class="shop-recommend1">
+    <div class="popup-tel" style="display: none">
+        <div class="screen-p">
+            <div class="screen-lis clearfix" id="" style="display: block;top: 2.3rem;">
+                <ul class="screen-area bg-white">
+                    <li><a href="">不限选择</a></li>
+                    <li><a href="">20平米以下</a></li>
+                    <li class="screen-area-ok"><a href="" class="t-screen">20-50平米</a></li>
+                    <li><a href="">50-100平米</a></li>
+                    <li style="border-bottom: none"><a href="">100平米以上</a></li>
+                </ul>
+                <ul class="screen-area-black">
+                    <li><a href=""> </a></li>
+                    <li><a href=""> </a></li>
+                    <li><a href=""> </a></li>
+                    <li><a href=""> </a></li>
+                    <li style="border-bottom: none"><a href=""> </a></li>
+                </ul>
+            </div>
+        </div>
+     </div>
+
+    <div class="popup-tel" style="display:none">
+
+        <div class="screen-p">
+
+            <div class="screen-con  bg-white">
+                <div class="p-con">
+                    <h3>推荐商铺</h3>
+                    <p class="clearfix"><span class="select-span">不限</span> <span>低价急转铺</span><span>最热餐饮铺</span>
+                        <span>不限</span> <span>低价急转铺</span> <span>最热餐饮铺</span>
+
+                    </p>
+
+                    <h3>商铺类型</h3>
+                    <p class="clearfix"><span>不限</span> <span>低价急转铺</span><span>最热餐饮铺</span>
+                        <span>不限</span> <span>低价急转铺</span> <span>最热餐饮铺</span>
+                        <span>不限</span> <span>低价急转铺</span><span>最热餐饮铺</span></p>
+                    <h3>租赁类型</h3>
+                    <p class="clearfix"><span>不限</span> <span>低价急转铺</span> <span>最热餐饮铺</span></p>
+
+                </div>
+                <a href="">确定</a>
+            </div>
+
+        </div>
+    </div>
+	
+	<div class="popup-tel" style="display: none">
+        <div class="screen-p">
+            <div class="screen-lis2 bg-white">
+                <ul>
+                    <li><a href="">不限选择</a></li>
+                    <li><a href="">20平米以下</a></li>
+                    <li><a href="">20-50平米</a></li>
+                    <li><a href="">50-100平米</a></li>
+                    <li style="border-bottom: none"><a href="">100平米以上</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="xuanze" style="display: none">
+    <div class="screen-select p-lr-30" id="screen-select">
+        <span>全部路段 x</span> <span>陆家嘴 x</span> <span>塘桥商圈 x</span>
+    </div>
+</div>
+</div>
+<div class=" p-lr-30 pb-105">
+    <ul class="shop-list">
+        <li class="clearfix">
+            <div class="shop-logo fl gold-shop">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="商铺详情.html" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">5万元/月</span>
+                </div>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="shop-logo fl">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">4.5万元/月</span>
+                </div>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="shop-logo fl">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">4.5万元/月</span>
+                </div>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="shop-logo fl">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">4.5万元/月</span>
+                </div>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="shop-logo fl">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">4.5万元/月</span>
+                </div>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="shop-logo fl">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">4.5万元/月</span>
+                </div>
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="shop-logo fl">
+                <img src="images/shop1.jpg" alt="">
+            </div>
+            <div class="shop-info fr">
+                <a href="" class="shop-name">局门路8号桥三期转角商铺20平奶茶店</a>
+                <div class="shop-flag">
+                    <span class="button flag1">有证照</span>
+                    <span class="button flag2">写字楼多</span>
+                    <span class="flag3">30平米</span>
+                    <a href="" class="collect collect-y fr"><i></i>收藏</a>
+                </div>
+                <div class="shop-price clearfix">
+                    <span class="fl">3分钟前更新</span>
+                    <span class="fr">4.5万元/月</span>
+                </div>
+            </div>
+        </li>
+		<li class="clearfix">
+            <a href="" style="text-align: center;display:block">加载更多</a>
+        </li>
+    </ul>
+
+</div>
+<div class="top-warp">
+    <!--<img src="images/top.png" alt="" class="top-icon">-->
+    <img src="images/top2.png" alt="" class="top-icon">
+</div>
+<footer class="footer">
+    <ul class="clearfix">
+        <li class="footer-index ">
+            <a href="index.html">
+                <b></b>
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="footer-shop footer-act">
+            <a href="店铺列表页面.html">
+                <b></b>
+                <span>商铺</span>
+            </a>
+        </li>
+        <li class="footer-release ">
+            <a href="发布需求.html">
+                <b></b>
+                <span>发布</span>
+            </a>
+        </li>
+        <li class="footer-my ">
+            <a href="个人中心.html">
+                <b></b>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script>
+    var a=document.getElementById("popup-lis");
+    var b=document.getElementById("screen-lis");
+    var c=document.getElementById("screen-con");
+    var d=document.getElementById("screen-lis2");
+    function show(){
+        a.style.backgroundColor="rgba(0,0,0,0.2)";
+        b.style.display="block";
+        c.style.display="none";
+        d.style.display="none";
+    }
+    function show1(){
+        a.style.backgroundColor="rgba(0,0,0,0.2)";
+        b.style.display="none";
+        c.style.display="block";
+        d.style.display="none";
+    }
+    function show2(){
+        a.style.backgroundColor="rgba(0,0,0,0.2)";
+        b.style.display="none";
+        c.style.display="none";
+        d.style.display="block";
+    }
+
+</script>
+</body>
+</html>
